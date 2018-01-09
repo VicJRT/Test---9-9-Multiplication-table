@@ -1,0 +1,51 @@
+#titleD{
+    width:auto;
+    height:auto;
+    background-color:#CCDDFF;
+    margin:0px auto;
+}
+
+#div1{
+    width:auto;
+    height:auto;
+    background-color:#CCDDFF;
+    margin:0px auto;
+}
+
+#div2{
+    width:auto;
+    height:auto;
+    background-color:#E8CCFF;
+    margin:0px auto;
+}
+
+#div3{
+    width:auto;
+    height:auto;
+    background-color:#9999FF;
+    margin:0px auto;
+	text-align:center;
+}
+
+#div4{
+    width:auto;
+    height:auto;
+    background-color:#9999FF;
+    margin:0px auto;
+	text-align:center;
+	color:red;
+}
+
+#var1{
+	text-align:center;
+	width:200px;	
+}
+
+#var2{
+	text-align:center;
+	width:200px;	
+}
+
+#bt1{
+	text-align:center;
+}

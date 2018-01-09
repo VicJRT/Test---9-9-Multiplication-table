@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-tw">
+	<meta charset="UTF-8">
+	<title>Test - 9*9 Multiplication table</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="function.js"></script>
+</head>
+<body onLoad="demo()">
+<div id="titleD" class="div">
+</div>
+
+<div id="div1" class="div">
+<center><table id="PageTable" border="1">
+</table>
+</div>
+<br>
+<div id="div2" class="div">
+<table id="DyamicTable" border="1">
+</table>
+</div>
+
+<div id="div3" class="div">
+<input type="text" id="var1" placeholder="Please input the variable A" maxlength="1" min="1" max="9"  pattern="[1-9]{1}" onchange="" > x 
+<input type="text" id="var2" placeholder="Please input the variable B" maxlength="1" min="1" max="9"  pattern="[1-9]{1}" onchange="" >
+<br>
+<button onclick="calculateResult()" id="bt1">Calculate Result</button>
+<br>
+<button onclick="clearTxt()" id="bt2">Clear</button>
+</div>
+<div id="div4" class="div"></div>
+</body>
+</html>
