@@ -1,4 +1,4 @@
-	function PresentTable99(){
+	function PresentTable99(){// show the 9*9 Multiplication table
 		document.getElementById('titleD').innerHTML = "9*9 Multiplication table";
 		document.getElementById('titleD').setAttribute("align","center");
 		
@@ -24,8 +24,8 @@
 		var txt2 = document.getElementById("var2").value;
 	    if(checkVar(txt1,txt2)==true)
 		{			
-			DyamicTable.innerHTML="";
-			clearTable99();
+			DyamicTable.innerHTML="";// clear the table content
+			clearTable99(); //clear the 9*9 Multiplication table function
 			try{
 
   			for(var i=1;i<= txt1;i++) { 
@@ -52,34 +52,41 @@
 			}
 
 		}		
-		GetCellValues(txt1,txt2);//height light table td
+		GetCellValues(txt1,txt2);//height light table td function
 	}
 	
-	function GetCellValues(a,b) {
+	function GetCellValues(a,b) {//height light table td 
 		var table = document.getElementById('PageTable');
-		for (var r = 0, n = table.rows.length; r < n; r++) {
-			for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {			
-				if(r==(a-1) && c==(b-1))
-					table.rows[r].cells[c].style.backgroundColor = "yellow";
+		try{
+			for (var r = 0, n = table.rows.length; r < n; r++) {
+				for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {			
+					if(r==(a-1) && c==(b-1))
+						table.rows[r].cells[c].style.backgroundColor = "yellow";
+				}
 			}
+		} catch(err) {
+			alert(err);
 		}
 	}
 	
-	function clearTxt(){
+	function clearTxt(){ // clear text,table,div content
 		document.getElementById("var1").value=""; 
 		document.getElementById("var2").value="";
 		document.getElementById("DyamicTable").innerHTML="";
 		document.getElementById("div4").innerHTML="";
-		clearTable99();
-			
+		clearTable99();			
 	}
 	
-	function clearTable99(){
+	function clearTable99(){//clear the 9*9 Multiplication table
 		var table = document.getElementById('PageTable');
-		for (var r = 0, n = table.rows.length; r < n; r++) {
-				for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {
-					table.rows[r].cells[c].style.backgroundColor = "";
+		try{
+			for (var r = 0, n = table.rows.length; r < n; r++) {
+					for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {
+						table.rows[r].cells[c].style.backgroundColor = "";
+				}
 			}
+		} catch(err) {
+			alert(err);
 		}
 	}
 	function checkVar(a,b) {
