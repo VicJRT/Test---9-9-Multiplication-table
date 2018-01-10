@@ -52,10 +52,10 @@
 			}
 
 		}		
-		GetCellValues(txt1,txt2);//height light table td function
+		GetCellValues(txt1,txt2);//highlight table td function
 	}
 	
-	function GetCellValues(a,b) {//height light table td 
+	function GetCellValues(a,b) {//highlight table td 
 		var table = document.getElementById('PageTable');
 		try{
 			for (var r = 0, n = table.rows.length; r < n; r++) {
