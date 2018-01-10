@@ -1,5 +1,4 @@
-	
-	function demo(){
+	function PresentTable99(){
 		document.getElementById('titleD').innerHTML = "9*9 Multiplication table";
 		document.getElementById('titleD').setAttribute("align","center");
 		
@@ -19,13 +18,14 @@
 	}	
 		
     function calculateResult(){
-	    if(nullText()==true)
-		{
-			var div=document.getElementById("div2"); 
-			var DyamicTable=document.getElementById("DyamicTable"); 
-			var txt1 = document.getElementById("var1").value; 
-			var txt2 = document.getElementById("var2").value;
+		var div=document.getElementById("div2"); 
+		var DyamicTable=document.getElementById("DyamicTable"); 
+		var txt1 = document.getElementById("var1").value; 
+		var txt2 = document.getElementById("var2").value;
+	    if(checkVar(txt1,txt2)==true)
+		{			
 			DyamicTable.innerHTML="";
+			clearTable99();
 			try{
 
   			for(var i=1;i<= txt1;i++) { 
@@ -55,45 +55,42 @@
 		GetCellValues(txt1,txt2);//height light table td
 	}
 	
-	function nullText(){
-		try{
-			var txt1 = document.getElementById("var1").value; 
-			var txt2 = document.getElementById("var2").value;
-			if(txt1=="" || txt2=="")
-			{
-				alert("Please input the variable");
-				return false;
-			}			
-			else
-			{
-				return true;
-			}
-		}catch(err) {
-			alert(err);
-		}
-	}
-	
 	function GetCellValues(a,b) {
 		var table = document.getElementById('PageTable');
 		for (var r = 0, n = table.rows.length; r < n; r++) {
 			for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {			
 				if(r==(a-1) && c==(b-1))
 					table.rows[r].cells[c].style.backgroundColor = "yellow";
-        }
-    }
-}
+			}
+		}
+	}
 	
 	function clearTxt(){
 		document.getElementById("var1").value=""; 
 		document.getElementById("var2").value="";
 		document.getElementById("DyamicTable").innerHTML="";
 		document.getElementById("div4").innerHTML="";
+		clearTable99();
+			
+	}
+	
+	function clearTable99(){
 		var table = document.getElementById('PageTable');
-		//table.setAttribute('bgcolor','');
 		for (var r = 0, n = table.rows.length; r < n; r++) {
 				for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {
 					table.rows[r].cells[c].style.backgroundColor = "";
 			}
 		}
-			
 	}
+	function checkVar(a,b) {
+		if((isNaN(a) || isNaN(b)) || (a=="" || b==""))
+		{
+			alert("Please input the numerical value.");
+			return false;
+		} else {
+			return true;
+		}
+	}
+	
+	
+	
