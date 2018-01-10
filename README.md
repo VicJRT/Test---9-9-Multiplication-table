@@ -2,15 +2,15 @@
 
 ## Introduction
 
-This is javascript practice.
+This is javascript practice.<br>
 
-Target:
-Create a page to calculate 9*9 Multiplication table.
-There will be a submit button on the page. 
-When submit the variables on the page, the calculated result will be display.
+Target:<br>
+Create a page to calculate 9*9 Multiplication table.<br>
+There will be a submit button on the page. <br>
+When submit the variables on the page, the calculated result will be display.<br><br>
 
-Input : Player can submit two variables. (variable A and variable B)
-Output: To display the calculated result of A * B on the page.
+Input : Player can submit two variables. (variable A and variable B)<br>
+Output: To display the calculated result of A * B on the page.<br><br>
 
 
 ### Test - 99 Multiplication table.html
