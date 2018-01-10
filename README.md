@@ -31,3 +31,8 @@ checkVar(a,b) function: Check the input value that is numerical value or not.<br
 
 ### style.css
 This file is css style file.
+
+
+### Link to view the page
+
+https://vicjrt.github.io/Test_99_Multiplication-table/index.html
