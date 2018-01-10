@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="function.js"></script>
 </head>
-<body onLoad="demo()">
+<body onLoad="PresentTable99()">
 <div id="titleD" class="div">
 </div>
 
@@ -21,8 +21,9 @@
 </div>
 
 <div id="div3" class="div">
-<input type="text" id="var1" placeholder="Please input the variable A" maxlength="1" min="1" max="9"  pattern="[1-9]{1}" onchange="" > x 
-<input type="text" id="var2" placeholder="Please input the variable B" maxlength="1" min="1" max="9"  pattern="[1-9]{1}" onchange="" >
+<center>Please input the numerical value between one and nine.<br><br>
+<input type="text" id="var1" name="varA" placeholder="Please input the variable A" maxlength="1" min="1" max="9" onkeyup="this.value=this.value.replace(/[^1-9]/g,'')" > x 
+<input type="text" id="var2" name="varB" placeholder="Please input the variable B" maxlength="1" min="1" max="9" onkeyup="this.value=this.value.replace(/[^1-9]/g,'')" >
 <br>
 <button onclick="calculateResult()" id="bt1">Calculate Result</button>
 <br>
