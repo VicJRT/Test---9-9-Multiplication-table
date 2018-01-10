@@ -13,7 +13,7 @@ Input : Player can submit two variables. (variable A and variable B)<br>
 Output: To display the calculated result of A * B on the page.<br><br>
 
 
-### Test - 99 Multiplication table.html
+### index.html
 This file is the program entry.<br>
 There are table, textbox and button on the page.
 <br><br>
